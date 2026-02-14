@@ -4,17 +4,40 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "random_tone_generator"
-version = "0.1.0"
-description = "Random sweep/hold tone generator"
+version = "0.1.1"
+description = "Random sweep/hold tone generator with explicit-duration playback."
 readme = "README.md"
 requires-python = ">=3.9"
+license = { text = "MIT" }
 authors = [
   { name = "Sithu Ye Htun" }
+]
+keywords = ["audio", "tone", "signal", "generator", "sweep", "sound"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Sound/Audio"
 ]
 dependencies = [
   "numpy>=1.23",
   "sounddevice>=0.4.6"
 ]
 
+[project.urls]
+Homepage = "https://github.com/leo007-htun/random_tone_generator"
+Repository = "https://github.com/leo007-htun/random_tone_generator"
+Issues = "https://github.com/leo007-htun/random_tone_generator/issues"
+
 [tool.setuptools]
 py-modules = ["random_tone_generator"]
+
+[tool.setuptools.packages.find]
+where = ["."]
