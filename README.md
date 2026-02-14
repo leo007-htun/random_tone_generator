@@ -15,13 +15,19 @@ A small Python utility to generate randomized tone sweeps and holds in real time
 - Explicit playback duration with `play_for(seconds)`
 
 ## function calls
-gen.set_speed(speed)         # float, must be > 0
-gen.set_max_freq(max_freq)   # float, must be >= min_freq
-gen.set_min_freq(min_freq)   # float, must be <= max_freq   (if implemented)
-gen.set_base_freq(base_freq) # float                        (if implemented)
-gen.set_amplitude(amplitude) # float in [0.0, 1.0]         (if implemented)
-state = gen.get_state()      # returns dict of current settings
-gen.play_for(seconds)        # play for N seconds (explicit mode)
+    gen.set_speed(speed)         # float, must be > 0
+    
+    gen.set_max_freq(max_freq)   # float, must be >= min_freq
+    
+    gen.set_min_freq(min_freq)   # float, must be <= max_freq   
+    
+    gen.set_base_freq(base_freq) # float                       
+    
+    gen.set_amplitude(amplitude) # float in [0.0, 1.0]       
+    
+    state = gen.get_state()      # returns dict of current settings
+    
+    gen.play_for(seconds)        # play for N seconds (explicit mode)
 
 ---
 
