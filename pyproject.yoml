@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "random_tone_generator"
+version = "0.1.0"
+description = "Random sweep/hold tone generator"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "Sithu Ye Htun" }
+]
+dependencies = [
+  "numpy>=1.23",
+  "sounddevice>=0.4.6"
+]
+
+[tool.setuptools]
+py-modules = ["random_tone_generator"]
